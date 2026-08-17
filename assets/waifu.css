@@ -1,8 +1,8 @@
 /* ============ 侧边开关（隐藏后用于唤回） ============ */
-#waifu-toggle {
+#waifu-toggle-poppinparty {
   background: linear-gradient(180deg, #9b8cff, #6b5ce7);
   border-radius: 6px 6px 0 0;
-  bottom: 66px;
+  bottom: 330px;
   color: #fff;
   cursor: pointer;
   font-size: 12px;
@@ -18,16 +18,16 @@
   box-shadow: 0 2px 8px rgba(107, 92, 231, 0.35);
 }
 
-#waifu-toggle.waifu-toggle-active {
+#waifu-toggle-poppinparty.waifu-toggle-active {
   margin-left: -50px;
 }
 
-#waifu-toggle.waifu-toggle-active:hover {
+#waifu-toggle-poppinparty.waifu-toggle-active:hover {
   margin-left: -30px;
 }
 
 /* ============ 主体容器 ============ */
-#waifu {
+#waifu-poppinparty {
   bottom: 20px;
   left: -40px;
   line-height: 0;
@@ -39,17 +39,17 @@
   touch-action: none; /* 拖拽时不触发页面手势 */
 }
 
-#waifu:not(.waifu-dragging):hover {
+#waifu-poppinparty:not(.waifu-dragging):hover {
   transform: translateY(-5px);
 }
 
-#waifu.waifu-dragging {
+#waifu-poppinparty.waifu-dragging {
   cursor: grabbing;
   user-select: none;
 }
 
 /* ============ 气泡 ============ */
-#waifu-tips {
+#waifu-tips-poppinparty {
   animation: shake 50s ease-in-out 5s infinite;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
@@ -75,7 +75,7 @@
   color: #333;
 }
 
-#waifu-tips::after {
+#waifu-tips-poppinparty::after {
   content: "";
   position: absolute;
   left: 30px;
@@ -88,30 +88,30 @@
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.08));
 }
 
-#waifu-tips.waifu-tips-active {
+#waifu-tips-poppinparty.waifu-tips-active {
   opacity: 1;
   transition: opacity 0.2s;
 }
 
-#waifu-tips span {
+#waifu-tips-poppinparty span {
   color: #6b5ce7;
   font-weight: 600;
 }
 
 /* ============ 画布 ============ */
-#live2d {
+#live2d-poppinparty {
   cursor: grab;
   height: 400px;
   position: relative;
   width: 400px;
 }
 
-#live2d:active {
+#live2d-poppinparty:active {
   cursor: grabbing;
 }
 
 /* ============ 工具按钮栏 ============ */
-#waifu-tool {
+#waifu-tool-poppinparty {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -128,19 +128,19 @@
   z-index: 5;
 }
 
-#waifu:hover #waifu-tool,
-#waifu-tool:hover {
+#waifu-poppinparty:hover #waifu-tool-poppinparty,
+#waifu-tool-poppinparty:hover {
   opacity: 1;
 }
 
-#waifu-tool span {
+#waifu-tool-poppinparty span {
   display: block;
   height: 40px;
   line-height: 40px;
   text-align: center;
 }
 
-#waifu-tool svg {
+#waifu-tool-poppinparty svg {
   fill: #7b8c9d;
   cursor: pointer;
   height: 22px;
@@ -148,7 +148,7 @@
   transition: fill 0.3s, transform 0.3s;
 }
 
-#waifu-tool svg:hover {
+#waifu-tool-poppinparty svg:hover {
   fill: #6b5ce7;
   transform: scale(1.15);
 }
@@ -239,7 +239,7 @@
 }
 
 /* --- 角色按钮 --- */
-#model-selection-panel .model-option {
+#model-selection-panel-poppinparty .model-option {
   align-items: center;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -255,13 +255,13 @@
   width: 100%;
 }
 
-#model-selection-panel .model-option:hover {
+#model-selection-panel-poppinparty .model-option:hover {
   background: rgba(139, 124, 255, 0.18);
   border-color: var(--accent, #8f7bff);
   transform: translateX(2px);
 }
 
-#model-selection-panel .model-option img {
+#model-selection-panel-poppinparty .model-option img {
   border-radius: 8px;
   display: block;
   height: 44px;
@@ -270,17 +270,17 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-#model-selection-panel .model-option-text {
+#model-selection-panel-poppinparty .model-option-text {
   display: flex;
   flex-direction: column;
 }
 
-#model-selection-panel .model-option-name {
+#model-selection-panel-poppinparty .model-option-name {
   font-size: 14px;
   font-weight: 600;
 }
 
-#model-selection-panel .model-option-en {
+#model-selection-panel-poppinparty .model-option-en {
   color: #8f88b8;
   font-size: 11px;
   text-transform: uppercase;
@@ -288,13 +288,13 @@
 }
 
 /* --- 换装按钮 --- */
-#texture-selection-panel .waifu-panel-body {
+#texture-selection-panel-poppinparty .waifu-panel-body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
 }
 
-#texture-selection-panel .texture-option {
+#texture-selection-panel-poppinparty .texture-option {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
@@ -307,13 +307,13 @@
   transition: background 0.25s, border-color 0.25s, transform 0.15s;
 }
 
-#texture-selection-panel .texture-option:hover {
+#texture-selection-panel-poppinparty .texture-option:hover {
   background: rgba(139, 124, 255, 0.2);
   border-color: #8f7bff;
   transform: translateY(-2px);
 }
 
-#texture-selection-panel .texture-option img {
+#texture-selection-panel-poppinparty .texture-option img {
   aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
@@ -322,7 +322,7 @@
   border-radius: 8px 8px 0 0;
 }
 
-#texture-selection-panel .texture-option span {
+#texture-selection-panel-poppinparty .texture-option span {
   display: block;
   padding: 4px 2px;
   white-space: nowrap;
@@ -330,7 +330,7 @@
   text-overflow: ellipsis;
 }
 
-#texture-selection-panel .texture-option-text {
+#texture-selection-panel-poppinparty .texture-option-text {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -338,7 +338,7 @@
   font-size: 12px;
 }
 
-#texture-selection-panel .texture-option-text span {
+#texture-selection-panel-poppinparty .texture-option-text span {
   padding: 8px 4px;
 }
 
@@ -398,12 +398,12 @@
 
 /* ============ 小屏适配 ============ */
 @media (max-width: 640px) {
-  #waifu-tips {
+  #waifu-tips-poppinparty {
     width: 200px;
     font-size: 13px;
   }
 
-  #waifu-tool {
+  #waifu-tool-poppinparty {
     right: 88px;
   }
 

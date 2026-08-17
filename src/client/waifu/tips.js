@@ -105,7 +105,7 @@ const tips = {
   },
   "mouseover": [
     {
-      "selector": "#waifu-tool-switch-model",
+      "selector": "#waifu-tool-poppinparty-switch-model",
       "text": [
         { "text": "想换个人陪陪你吗？嘻！", "motion": "wink01" },
         { "text": "换……其他的孩子？", "motion": "nod01" },
@@ -115,7 +115,7 @@ const tips = {
       ]
     },
     {
-      "selector": "#waifu-tool-photo",
+      "selector": "#waifu-tool-poppinparty-photo",
       "text": [
         { "text": "拍照！要拍出闪闪发光的照片哦！", "motion": "smile02" },
         { "text": "照片……能把星星留下来吗？", "motion": "eeto01" },
@@ -125,7 +125,7 @@ const tips = {
       ]
     },
     {
-      "selector": "#waifu-tool-info",
+      "selector": "#waifu-tool-poppinparty-info",
       "text": [
         { "text": "想知道我的事吗？那就告诉你！", "motion": "smile03" },
         { "text": "关于我……的事？", "motion": "nod01" },
@@ -135,7 +135,7 @@ const tips = {
       ]
     },
     {
-      "selector": "#waifu-tool-quit",
+      "selector": "#waifu-tool-poppinparty-quit",
       "text": [
         { "text": "诶——要走了吗？我会想你的！", "motion": "sad01" },
         { "text": "要……走了？", "motion": "nod01" },
